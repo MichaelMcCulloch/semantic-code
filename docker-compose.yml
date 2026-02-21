@@ -1,0 +1,20 @@
+services:
+  infinity:
+    image: michaelf34/infinity:latest
+    ports:
+      - "7997:7997"
+    volumes:
+      - infinity_cache:/app/.cache
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    environment:
+      - HF_TOKEN=${HF_TOKEN}
+    command: ["v2", "--model-id", "Salesforce/SFR-Embedding-Code-400M_R"]
+
+volumes:
+  infinity_cache:

@@ -1,0 +1,21 @@
+[project]
+name = "semantic-indexing"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "numpy>=2.4.2",
+    "pandas>=3.0.1",
+    "pathspec>=1.0.4",
+    "plotly>=6.5.2",
+    "requests>=2.32.5",
+    "scikit-learn>=1.8.0",
+    "tree-sitter>=0.25.2",
+    "tree-sitter-c>=0.24.1",
+    "tree-sitter-cpp>=0.23.4",
+    "tree-sitter-python>=0.25.0",
+    "tree-sitter-rust>=0.24.0",
+    "typer>=0.9.0,<0.16.0",
+    "umap-learn>=0.5.11",
+]
